@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/670febc514.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="time"></div>
+        <span class="seconds"></span>
+      </header>
+      <main class="main">
+        <section class="main-weather">
+          <div class="main-location"></div>
+          <div class="weather-icon">
+            <!-- <i class="fa-solid fa-cloud-rain"></i> -->
+          </div>
+          <div class="weather-info"></div>
+          <div class="weather-min_max">
+            <div class="min"></div>
+            <div class="max"></div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="recommend-clothes">
+          <h2>추천 복장</h2>
+          <div class="clothes-list"></div>
+        </div>
+      </footer>
+    </div>
+    <!-- JS -->
+    <script type="module" src="main.js"></script>
+    <script src="time.js"></script>
+    <script type="module" src="data.js"></script>
+  </body>
+</html>

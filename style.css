@@ -1,0 +1,111 @@
+* {
+  padding: 0; margin: 0; box-sizing: border-box;
+  font-family: 'poppins', sans-serif;
+}
+
+:root {
+  --font-small: 1rem;
+  --font-regular: 2rem;
+  --font-large: 3.6rem;
+  --font-biggest: 6rem;
+}
+
+.container {
+  width: 100%; height: 100vh;
+  background: linear-gradient(rgba(55, 135, 255, 0.5),rgba(159, 192, 255, 0.5));
+  position: relative;
+  padding: 3rem 1rem; 
+}
+
+/* ###### HEADER ####### */
+.header {
+  width: 100%;
+  text-align: center;
+  font-size: var(--font-large);
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+}
+.seconds {
+  margin-left: 0.5rem;
+  font-size: var(--font-regular);
+}
+
+
+.main {
+  width: 100%;
+}
+
+.main i {
+  width: 100%; 
+  font-size: var(--font-biggest);
+}
+
+.main-weather {
+  width: 100%;
+  display: grid;
+  row-gap: 1rem;
+  margin-left: auto; margin-right: auto;
+  padding: 3rem 1rem;
+}
+
+.main-location {
+  text-align: center;
+  font-weight: 500;
+  font-size: var(--font-small);
+}
+
+.weather-icon {
+  text-align: center;
+  padding: 0.5rem;
+}
+.weather-info {
+  width: 100%;
+  text-align: center;
+  font-weight: 600;
+  padding:0.5rem 1.25rem;
+  font-size: 1.5rem;
+}
+.weather-min_max {
+  text-align: center;
+}
+
+/* ###### footer ###### */
+.footer {
+  width: 100%;
+  padding: 1.5rem;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.recommend-clothes {
+  display: grid;
+  text-align: center;
+  row-gap: 1rem;
+  width: 100%; padding: 1rem;
+}
+
+.clothes-list {
+  width: 100%;
+  display: flex;
+  justify-content: space-between; align-items: center;
+  margin-left: auto; margin-right: auto;
+  padding: 1rem;
+}
+
+
+@media (min-width:1024px){
+  .header {
+    font-size: var(--font-biggest);
+  }
+  
+  .clothes-list {
+  width: 100%;
+  max-width: 50%;
+  display: flex;
+  justify-content: space-between; align-items: center;
+  margin-left: auto; margin-right: auto;
+  padding: 3rem 3rem;
+}
+}
